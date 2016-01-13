@@ -1,0 +1,286 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+
+.home {
+  display: inline-block;
+  width: 100%; }
+  .home .name-section {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/Lisbon.jpg) no-repeat center;
+    position: relative; }
+    .home .name-section .name-text {
+      color: white;
+      text-align: center;
+      margin-top: 25%; }
+  .home .arrow-down-button {
+    display: inline-block;
+    background: url(../images/arrow-down2-50x50.png) no-repeat center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+  .home .arrow-down-button:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  .home .content-text {
+    display: inline-flex;
+    height: 100%;
+    background-color: #0E51A7;
+    width: 33.3%;
+    text-align: left;
+    color: white; }
+  .home .content-image {
+    background-color: green;
+    display: inline-block;
+    height: 100%;
+    width: 33.3%;
+    position: relative;
+    overflow: hidden; }
+    .home .content-image img {
+      width: 100%;
+      height: 100%;
+      transition: all 600ms ease-in-out; }
+    .home .content-image .content-image-box {
+      position: absolute;
+      top: 45%;
+      left: 38%;
+      border: 2px solid white;
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .home .content-image:hover img {
+      transform: scale(1.05); }
+    .home .content-image:hover .content-image-box {
+      background-color: white;
+      color: Black; }
+  .home .personal-section {
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+    position: relative; }
+    .home .personal-section article {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 15%; }
+      .home .personal-section article .divider {
+        display: block;
+        width: 33%;
+        border-bottom: 5px solid white;
+        margin-top: 35px;
+        margin-bottom: 35px; }
+  .home .professional-section {
+    display: inline-flex; }
+  .home canvas {
+    background: url(../images/Bottom.jpg) no-repeat center;
+    width: 100%;
+    height: 200px; }
+  .home .social-icons {
+    position: absolute;
+    bottom: -120%;
+    left: 30%;
+    display: inline-block; }
+    .home .social-icons ul {
+      list-style: none;
+      display: inline-block; }
+      .home .social-icons ul li {
+        display: inline-block; }
+    .home .social-icons .button {
+      width: 56px;
+      height: 56px;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .home .social-icons .twitter {
+      background: url(../images/twitter.png) no-repeat center; }
+    .home .social-icons .facebook {
+      background: url(../images/facebook.png) no-repeat center; }
+    .home .social-icons .instagram {
+      background: url(../images/instagram.png) no-repeat center; }
+    .home .social-icons .linkedin {
+      background: url(../images/linkedin.png) no-repeat center; }
+
+.about-me {
+  width: 100%; }
+  .about-me .about-me-image {
+    background: url(../images/aboutMe2.jpg) no-repeat center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: -14px; }
+  .about-me .about-me-content {
+    display: inline-block;
+    height: 75%;
+    width: 100%;
+    background-color: black;
+    position: relative; }
+    .about-me .about-me-content article {
+      position: absolute;
+      top: -45%;
+      height: 125%;
+      left: 5%;
+      width: 90%;
+      color: white;
+      font-size: 16;
+      background: #353535;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#353535, #353535);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#353535, #353535);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#353535, #353535);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#353535, #353535);
+      /* Standard syntax */ }
+      .about-me .about-me-content article .about-me-title-section img {
+        margin-left: 100px;
+        display: inline-block;
+        margin-top: -50px; }
+      .about-me .about-me-content article .about-me-title-section .about-me-title {
+        display: inline-block;
+        padding-left: 50px;
+        padding-top: 50px; }
+        .about-me .about-me-content article .about-me-title-section .about-me-title h3 {
+          font-size: 33px;
+          line-height: 25px; }
+          .about-me .about-me-content article .about-me-title-section .about-me-title h3.black {
+            color: #202020; }
+      .about-me .about-me-content article .about-me-name {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+        display: inline-block; }
+        .about-me .about-me-content article .about-me-name .black {
+          color: #202020; }
+      .about-me .about-me-content article .arrow-down-button {
+        display: inline-block;
+        background: url(../images/arrow-down2-50x50.png) no-repeat center;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin-right: 40px;
+        margin-top: 20px; }
+      .about-me .about-me-content article p {
+        padding-left: 100px;
+        padding-right: 100px; }
+        .about-me .about-me-content article p.about-me-text {
+          padding-top: 50px; }
+      .about-me .about-me-content article .about-me-social {
+        display: inline-block;
+        padding-top: 50px;
+        padding-left: 30%; }
+        .about-me .about-me-content article .about-me-social ul {
+          list-style: none;
+          display: inline-block; }
+          .about-me .about-me-content article .about-me-social ul li {
+            display: inline-block; }
+        .about-me .about-me-content article .about-me-social .button {
+          width: 56px;
+          height: 56px;
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px; }
+        .about-me .about-me-content article .about-me-social .twitter {
+          background: url(../images/twitter.png) no-repeat center; }
+        .about-me .about-me-content article .about-me-social .facebook {
+          background: url(../images/facebook.png) no-repeat center; }
+        .about-me .about-me-content article .about-me-social .instagram {
+          background: url(../images/instagram.png) no-repeat center; }
+        .about-me .about-me-content article .about-me-social .linkedin {
+          background: url(../images/linkedin.png) no-repeat center; }
+
+.other-activities {
+  width: 100%; }
+  .other-activities .other-activities-image {
+    background: url(../images/otherActivities1.jpg) no-repeat center;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: -14px; }
+  .other-activities .other-activities-content {
+    display: inline-block;
+    height: 75%;
+    width: 100%;
+    background-color: #1E6A3F;
+    position: relative; }
+    .other-activities .other-activities-content article {
+      position: absolute;
+      top: -45%;
+      height: 125%;
+      left: 5%;
+      width: 90%;
+      color: white;
+      font-size: 16;
+      background: #078D41; }
+      .other-activities .other-activities-content article .other-activities-title-section img {
+        margin-left: 100px;
+        display: inline-block;
+        margin-top: -50px; }
+      .other-activities .other-activities-content article .other-activities-title-section .other-activities-title {
+        display: inline-block;
+        padding-left: 50px;
+        padding-top: 50px; }
+        .other-activities .other-activities-content article .other-activities-title-section .other-activities-title h3 {
+          font-size: 33px;
+          line-height: 25px; }
+          .other-activities .other-activities-content article .other-activities-title-section .other-activities-title h3.darkGreen {
+            color: #025C29; }
+      .other-activities .other-activities-content article .other-activities-name {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+        display: inline-block; }
+        .other-activities .other-activities-content article .other-activities-name .darkGreen {
+          color: #025C29; }
+      .other-activities .other-activities-content article .arrow-down-button {
+        display: inline-block;
+        background: url(../images/arrow-down2-50x50.png) no-repeat center;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin-right: 40px;
+        margin-top: 20px; }
+      .other-activities .other-activities-content article p {
+        padding-left: 100px;
+        padding-right: 100px; }
+        .other-activities .other-activities-content article p.other-activities-text {
+          padding-top: 50px; }
+      .other-activities .other-activities-content article .other-activities-social {
+        display: inline-block;
+        padding-top: 50px;
+        padding-left: 30%; }
+        .other-activities .other-activities-content article .other-activities-social ul {
+          list-style: none;
+          display: inline-block; }
+          .other-activities .other-activities-content article .other-activities-social ul li {
+            display: inline-block; }
+        .other-activities .other-activities-content article .other-activities-social .button {
+          width: 56px;
+          height: 56px;
+          display: inline-block;
+          margin-left: 20px;
+          margin-right: 20px; }
+        .other-activities .other-activities-content article .other-activities-social .twitter {
+          background: url(../images/twitter.png) no-repeat center; }
+        .other-activities .other-activities-content article .other-activities-social .facebook {
+          background: url(../images/facebook.png) no-repeat center; }
+        .other-activities .other-activities-content article .other-activities-social .instagram {
+          background: url(../images/instagram.png) no-repeat center; }
+        .other-activities .other-activities-content article .other-activities-social .linkedin {
+          background: url(../images/linkedin.png) no-repeat center; }
+
+/*# sourceMappingURL=site.css.map */
