@@ -1,21 +1,100 @@
-<html lang=en >
+<html lang=en>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Pedro Mira Lopes</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/site.css">
+<head>
+    <meta charset="utf-8">
+    <title>Pedro Mira Lopes</title>
 
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-1.11.3.min.js"></script>
-        <script src="dependencies/zepto/zepto.min.js"></script>
-        <script src="js/constellation.js"></script>
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-ui-router.min.js"></script>
-        <script src="js/app.js"></script>
-    </head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/site.css">
 
-    <body ng-app="personalSite">
-        <div ui-view></div>
-    </body>
+    <!-- Javascripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dependencies/zepto/zepto.min.js"></script>
+    <script src="js/constellation.js"></script>
+    <script src="js/site.js"></script>
+</head>
+
+<body>
+    <main class="home">
+        <canvas id="background" width="100%" height="100%" class="background-constellation"></canvas>
+        <section class="name-section">
+            <div class="name-text">
+                <h1>Pedro Mira Lopes</h1>
+                <h3>Computer Science Engineer, programmer and web developer</h3>
+            </div>
+            <a scroll-on-click href="#personal" class="arrow-down-button">
+            </a>
+        </section>
+        <section id="personal">
+            <div class="content-text">
+                <article>
+                    <h4>
+                        Computer Science Master's student at Instituto Superior Técnico
+                    </h4>
+                    <div class="divider"></div>
+                    <h4>
+                        Currently finishing my masters's thesis on 3D interaction with Intelligent Buildings and working as a full-stack junior developer at Bimk
+                    </h4>
+                </article>
+            </div>
+            <div class="content-image">
+                <img src="images/aboutMe2.jpg" alt="about me">
+                <div class="content-image-box"> <a href="views/aboutMe.html">ABOUT ME</a></div>
+            </div>
+            <div class="content-image">
+                <img src="images/portfolio.png" alt="about me">
+                <div class="content-image-box"><a href="views/work.html">PORTFOLIO</a></div>
+            </div>
+        </section>
+        <section>
+            <div class="content-image">
+                <img src="images/otherActivities.jpg" alt="about me">
+                <div class="content-image-box" ui-sref="other"><a href="views/otherActivities.html">OTHER ACTIVITIES</a></div>
+            </div>
+            <div class="content-image">
+                <img src="images/contactMe.jpg" alt="contact me">
+                <div class="content-image-box">
+                    <a href="views/contact.html"> CONTACT ME</a>
+                </div>
+            </div>
+            <div class="content-text">
+                <article>
+                    <h4>
+                        After having played rugby for a few years, I became passionate about this sport
+                    </h4>
+                    <div class="divider"></div>
+                    <h4>
+                        I love to travel and find completely new locations
+                    </h4>
+                </article>
+            </div>
+            <a scroll-on-click href="#socialIcons" class="arrow-down-button">
+            </a>
+        </section>
+        <canvas id="background" width="100%" height="200" class="footer-constellation"></canvas>
+        <div class="social-icons" id="socialIcons">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/PedroMiraLopes" class="fa fa-twitter-square fa-5x"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/pedro.miralopes" class="fa fa-facebook-square fa-5x"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/profile/view?id=AAMAABLRKiEBWGOiBwWHw8A5R3bMJ2KaDpVYAuY&trk=hp-identity-photo" class="fa fa-linkedin-square fa-5x"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/pfmiralopes/" class="fa fa-instagram fa-5x"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/PMiraLopes" class="fa fa-github-square fa-5x"></a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
 </html>

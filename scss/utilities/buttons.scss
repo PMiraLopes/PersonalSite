@@ -1,0 +1,40 @@
+.arrow-down-button {
+    background: url(../images/arrow-down2-50x50.png) no-repeat center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 3;
+    &:hover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.arrow-left-button {
+    @extend .arrow-down-button;
+    background: url(../images/arrow-left2-50x50.png) no-repeat center;
+}
+
+.contacts {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    ul {
+        list-style: none;
+        display: inline-block;
+        li {
+            display: inline-block;
+            a {
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+$color-cyan: #CCC;
+$color-green-500: #CCC;
+$color-blue-400: #CCC;
+.work {
+    background-color: white;
+    width: 100%;
+    .title {
+        display: block;
+        height: 50%;
+        span {
+            display: inline-block;
+            width: 375px;
+            float: left;
+            padding-left: 80px;
+            padding-top: 125px;
+            line-height: 1;
+            b {
+                font-size: 32pt;
+                color: rgb(101, 150, 207);
+            }
+        }
+        img {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+    }
+    .box {
+        display: block;
+        width: 100%;
+        height: 320px;
+        font-size: 0;
+        .box-img {
+            width: 50%;
+            height: 500px;
+            display: inline-block;
+            transform: scale(0);
+            opacity: 0;
+            &.titleImage {
+                background: url(../../images/3DImage.jpg) no-repeat center;
+            }
+            &.draw {
+                background: url(../images/landing/manufacturer/draw.jpg) no-repeat center;
+            }
+            &.building {
+                background: url(../images/landing/manufacturer/building.jpg) no-repeat center;
+            }
+        }
+        .box-text {
+            width: 50%;
+            height: 500px;
+            display: inline-block;
+            transform: scale(0);
+            opacity: 0;
+            .cicle-text {
+                color: white;
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-top: 60px;
+                padding-bottom: 50px;
+                font-size: 12pt;
+                p {
+                    padding-bottom: 30px;
+                }
+                h3 {
+                    font-weight: 100;
+                    padding-bottom: 30px;
+                    font-size: 1.875em;
+                }
+            }
+        }
+        .mini-box {
+            transform: scale(0);
+            opacity: 0;
+            width: 360px;
+            height: 320px;
+            display: inline-block;
+            &.pen {
+                background: $color-green-500 url(../images/landing/manufacturer/pen.png) no-repeat center;
+                margin-left: calc(50% - 360px);
+            }
+            &.brush {
+                background: $color-cyan url(../images/landing/manufacturer/brush.png) no-repeat center;
+                margin-left: calc(50% - 360px);
+            }
+            &.resize {
+                background: $color-cyan url(../images/landing/manufacturer/resize.png) no-repeat center;
+            }
+        }
+        .right {
+            text-align: left;
+            float: right;
+        }
+        .left {
+            text-align: left;
+            float: left;
+        }
+        .top {
+            vertical-align: top;
+        }
+    }
+    .big-box-height {
+        height: 670px !important;
+    }
+    .medium-box-height {
+        height: 500px !important;
+        &.cicle-text {
+            padding-top: 20% !important;
+        }
+    }
+    .small-box-height {
+        height: 320px !important;
+        &.cicle-text {
+            padding-top: 10% !important;
+        }
+    }
+    .larger-box-height {
+        height: 350px !important;
+        &.cicle-text {
+            padding-top: 12% !important;
+        }
+    }
+    .medium-box-width {
+        width: 585px !important;
+    }
+    .dark-blue-box {
+        background-color: $color-blue-400;
+    }
+    .green-box {
+        background-color: $color-green-500;
+    }
+    .cyan-box {
+        background-color: $color-cyan;
+    }
+}

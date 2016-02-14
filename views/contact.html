@@ -1,0 +1,73 @@
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pedro Mira Lopes</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/site.css">
+
+    <!-- Javascripts -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/site.js"></script>
+</head>
+
+<body>
+    <main class="contact-me">
+        <div class="contact-me-image"></div>
+
+        <div class="contact-me-content">
+            <article>
+                <div class="contact-me-name">
+                    Pedro
+                    <br>
+                    <span class="black">Mira Lopes</span>
+                </div>
+                <a class="arrow-down-button" scroll-on-click href="#contactForm"></a>
+                <a class="arrow-left-button" scroll-on-click href="../index.html"></a>
+                <div class="contact-me-title-section">
+                    <img src="../images/Me.jpg" class="img-circle" alt="Cinque Terre" width="120" height="120">
+                    <div class="contact-me-title">
+                        <h3>CONTACT ME</h3>
+                        <h3 class="black">SEND ME AN EMAIL</h3>
+                    </div>
+                </div>
+
+                <div class="contact-me-form">
+                    <input placeholder="*Name" type="text" id="senderName" required>
+                    <input placeholder="*Email" type="email" id="senderMail" required>
+                    <textarea placeholder="*Send me a message" id="senderMessage" required></textarea>
+                    <button onclick="sendMail()">Send</button>
+                </div>
+
+                <a id="contactForm"></a>
+
+                <div class="contacts">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/PedroMiraLopes" class="fa fa-twitter-square fa-4x"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/pedro.miralopes" class="fa fa-facebook-square fa-4x"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/profile/view?id=AAMAABLRKiEBWGOiBwWHw8A5R3bMJ2KaDpVYAuY&trk=hp-identity-photo" class="fa fa-linkedin-square fa-4x"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/pfmiralopes/" class="fa fa-instagram fa-4x"></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/PMiraLopes" class="fa fa-github-square fa-4x"></a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,6 +1,46 @@
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300; }
+.arrow-down-button, .arrow-left-button {
+  background: url(../images/arrow-down2-50x50.png) no-repeat center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 3; }
+  .arrow-down-button:hover, .arrow-left-button:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+.arrow-left-button {
+  background: url(../images/arrow-left2-50x50.png) no-repeat center; }
+
+.contacts {
+  padding-top: 50px;
+  width: 100%;
+  text-align: center; }
+  .contacts ul {
+    list-style: none;
+    display: inline-block; }
+    .contacts ul li {
+      display: inline-block; }
+      .contacts ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px; }
+
+.background-constellation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2; }
+
+.footer-constellation {
+  background: url(../images/footer.jpg) no-repeat center;
+  width: 100%;
+  height: 200px; }
 
 .home {
   display: inline-block;
@@ -10,33 +50,20 @@ body {
     width: 100%;
     height: 100%;
     background: url(../images/Lisbon.jpg) no-repeat center;
+    background-size: cover;
     position: relative; }
+    .home .name-section .arrow-down-button, .home .name-section .arrow-left-button {
+      position: absolute;
+      left: 50%;
+      bottom: 10px; }
     .home .name-section .name-text {
       color: white;
       text-align: center;
       margin-top: 25%; }
-  .home .arrow-down-button {
-    display: inline-block;
-    background: url(../images/arrow-down2-50x50.png) no-repeat center;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; }
-  .home .arrow-down-button:hover {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); }
   .home .content-text {
     display: inline-flex;
     height: 100%;
-    background-color: #0E51A7;
+    background-color: #6596cf;
     width: 33.3%;
     text-align: left;
     color: white; }
@@ -56,70 +83,59 @@ body {
       top: 45%;
       left: 38%;
       border: 2px solid white;
-      color: white;
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 10px;
       padding-bottom: 10px; }
+      .home .content-image .content-image-box a {
+        text-decoration: none;
+        color: white; }
     .home .content-image:hover img {
       transform: scale(1.05); }
     .home .content-image:hover .content-image-box {
-      background-color: white;
-      color: Black; }
-  .home .personal-section {
+      background-color: white; }
+      .home .content-image:hover .content-image-box a {
+        color: Black; }
+  .home section {
     display: inline-flex;
     width: 100%;
     height: 50%;
     position: relative; }
-    .home .personal-section article {
+    .home section .arrow-down-button, .home section .arrow-left-button {
+      position: absolute;
+      left: 50%;
+      bottom: 10px; }
+    .home section article {
       margin-left: 20px;
       margin-right: 20px;
       margin-top: 15%; }
-      .home .personal-section article .divider {
+      .home section article .divider {
         display: block;
         width: 33%;
         border-bottom: 5px solid white;
         margin-top: 35px;
         margin-bottom: 35px; }
-  .home .professional-section {
-    display: inline-flex; }
-  .home canvas {
-    background: url(../images/Bottom.jpg) no-repeat center;
-    width: 100%;
-    height: 200px; }
   .home .social-icons {
     position: absolute;
     bottom: -120%;
     left: 30%;
     display: inline-block; }
     .home .social-icons ul {
-      list-style: none;
-      display: inline-block; }
+      list-style: none; }
       .home .social-icons ul li {
         display: inline-block; }
-    .home .social-icons .button {
-      width: 56px;
-      height: 56px;
-      display: inline-block;
-      margin-left: 20px;
-      margin-right: 20px; }
-    .home .social-icons .twitter {
-      background: url(../images/twitter.png) no-repeat center; }
-    .home .social-icons .facebook {
-      background: url(../images/facebook.png) no-repeat center; }
-    .home .social-icons .instagram {
-      background: url(../images/instagram.png) no-repeat center; }
-    .home .social-icons .linkedin {
-      background: url(../images/linkedin.png) no-repeat center; }
+    .home .social-icons a {
+      color: white;
+      text-decoration: none;
+      padding: 10px; }
 
 .about-me {
   width: 100%; }
   .about-me .about-me-image {
     background: url(../images/aboutMe2.jpg) no-repeat center;
+    background-size: cover;
     height: 100%;
-    width: 100%;
-    display: inline-block;
-    margin-bottom: -14px; }
+    width: 100%; }
   .about-me .about-me-content {
     display: inline-block;
     height: 75%;
@@ -129,20 +145,19 @@ body {
     .about-me .about-me-content article {
       position: absolute;
       top: -45%;
-      height: 125%;
       left: 5%;
       width: 90%;
       color: white;
       font-size: 16;
       background: #353535;
       /* For browsers that do not support gradients */
-      background: -webkit-linear-gradient(#353535, #353535);
+      background: -webkit-linear-gradient(#353535, rgba(53, 53, 53, 0.6));
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#353535, #353535);
+      background: -o-linear-gradient(#353535, rgba(53, 53, 53, 0.6));
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#353535, #353535);
+      background: -moz-linear-gradient(#353535, rgba(53, 53, 53, 0.6));
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#353535, #353535);
+      background: linear-gradient(#353535, rgba(53, 53, 53, 0.6));
       /* Standard syntax */ }
       .about-me .about-me-content article .about-me-title-section img {
         margin-left: 100px;
@@ -164,123 +179,268 @@ body {
         display: inline-block; }
         .about-me .about-me-content article .about-me-name .black {
           color: #202020; }
-      .about-me .about-me-content article .arrow-down-button {
-        display: inline-block;
-        background: url(../images/arrow-down2-50x50.png) no-repeat center;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
+      .about-me .about-me-content article .arrow-down-button, .about-me .about-me-content article .arrow-left-button {
         float: right;
         margin-right: 40px;
+        margin-top: 20px; }
+      .about-me .about-me-content article .arrow-left-button {
+        float: right;
+        margin-right: 10px;
         margin-top: 20px; }
       .about-me .about-me-content article p {
         padding-left: 100px;
         padding-right: 100px; }
         .about-me .about-me-content article p.about-me-text {
           padding-top: 50px; }
-      .about-me .about-me-content article .about-me-social {
-        display: inline-block;
-        padding-top: 50px;
-        padding-left: 30%; }
-        .about-me .about-me-content article .about-me-social ul {
-          list-style: none;
-          display: inline-block; }
-          .about-me .about-me-content article .about-me-social ul li {
-            display: inline-block; }
-        .about-me .about-me-content article .about-me-social .button {
-          width: 56px;
-          height: 56px;
-          display: inline-block;
-          margin-left: 20px;
-          margin-right: 20px; }
-        .about-me .about-me-content article .about-me-social .twitter {
-          background: url(../images/twitter.png) no-repeat center; }
-        .about-me .about-me-content article .about-me-social .facebook {
-          background: url(../images/facebook.png) no-repeat center; }
-        .about-me .about-me-content article .about-me-social .instagram {
-          background: url(../images/instagram.png) no-repeat center; }
-        .about-me .about-me-content article .about-me-social .linkedin {
-          background: url(../images/linkedin.png) no-repeat center; }
 
-.other-activities {
+.contact-me {
   width: 100%; }
-  .other-activities .other-activities-image {
-    background: url(../images/otherActivities1.jpg) no-repeat center;
+  .contact-me .contact-me-image {
+    background: url(../images/contactMe.jpg) no-repeat center;
+    background-size: cover;
     height: 100%;
-    width: 100%;
+    width: 100%; }
+  .contact-me .contact-me-content {
     display: inline-block;
-    margin-bottom: -14px; }
-  .other-activities .other-activities-content {
-    display: inline-block;
-    height: 75%;
+    height: 80%;
     width: 100%;
-    background-color: #1E6A3F;
+    background-color: #a08142;
     position: relative; }
-    .other-activities .other-activities-content article {
+    .contact-me .contact-me-content article {
       position: absolute;
       top: -45%;
-      height: 125%;
       left: 5%;
       width: 90%;
       color: white;
       font-size: 16;
-      background: #078D41; }
-      .other-activities .other-activities-content article .other-activities-title-section img {
+      background: #6f5533;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#6f5533, rgba(111, 85, 51, 0.7));
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#6f5533, rgba(111, 85, 51, 0.7));
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#6f5533, rgba(111, 85, 51, 0.7));
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#6f5533, rgba(111, 85, 51, 0.7));
+      /* Standard syntax */ }
+      .contact-me .contact-me-content article .contact-me-title-section img {
         margin-left: 100px;
         display: inline-block;
         margin-top: -50px; }
-      .other-activities .other-activities-content article .other-activities-title-section .other-activities-title {
+      .contact-me .contact-me-content article .contact-me-title-section .contact-me-title {
         display: inline-block;
         padding-left: 50px;
+        padding-top: 50px; }
+        .contact-me .contact-me-content article .contact-me-title-section .contact-me-title h3 {
+          font-size: 33px;
+          line-height: 25px; }
+          .contact-me .contact-me-content article .contact-me-title-section .contact-me-title h3.black {
+            color: #202020; }
+      .contact-me .contact-me-content article .contact-me-name {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+        display: inline-block; }
+        .contact-me .contact-me-content article .contact-me-name .black {
+          color: #202020; }
+      .contact-me .contact-me-content article .arrow-down-button, .contact-me .contact-me-content article .arrow-left-button {
+        float: right;
+        margin-right: 40px;
+        margin-top: 20px; }
+      .contact-me .contact-me-content article .arrow-left-button {
+        float: right;
+        margin-right: 10px;
+        margin-top: 20px; }
+      .contact-me .contact-me-content article .contact-me-form {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px; }
+        .contact-me .contact-me-content article .contact-me-form input,
+        .contact-me .contact-me-content article .contact-me-form textarea {
+          display: block;
+          margin: 10px auto;
+          width: 60%;
+          border-radius: 4px;
+          border: 0;
+          padding: 5px;
+          resize: none;
+          background: #CCC;
+          color: black; }
+        .contact-me .contact-me-content article .contact-me-form textarea {
+          height: 200px; }
+        .contact-me .contact-me-content article .contact-me-form button {
+          display: block;
+          margin: 20px auto;
+          border-radius: 4px;
+          border: 0;
+          padding: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          color: black; }
+
+.other-activities {
+  width: 100%; }
+  .other-activities .other-activities-image {
+    background: url(../images/rugbyBall.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%; }
+  .other-activities .other-activities-content {
+    display: inline-block;
+    height: 65%;
+    width: 100%;
+    background-color: #475020;
+    position: relative; }
+    .other-activities .other-activities-content article {
+      position: absolute;
+      top: -45%;
+      left: 5%;
+      width: 90%;
+      color: white;
+      font-size: 16;
+      background: #796b37;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#796b37, rgba(121, 107, 55, 0.6));
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#796b37, rgba(121, 107, 55, 0.6));
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#796b37, rgba(121, 107, 55, 0.6));
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#796b37, rgba(121, 107, 55, 0.6));
+      /* Standard syntax */ }
+      .other-activities .other-activities-content article .other-activities-title-section .other-activities-title {
+        display: inline-block;
+        padding-left: 100px;
         padding-top: 50px; }
         .other-activities .other-activities-content article .other-activities-title-section .other-activities-title h3 {
           font-size: 33px;
           line-height: 25px; }
           .other-activities .other-activities-content article .other-activities-title-section .other-activities-title h3.darkGreen {
-            color: #025C29; }
+            color: #475020; }
       .other-activities .other-activities-content article .other-activities-name {
         padding-top: 20px;
         padding-left: 20px;
         font-size: 16px;
         display: inline-block; }
         .other-activities .other-activities-content article .other-activities-name .darkGreen {
-          color: #025C29; }
-      .other-activities .other-activities-content article .arrow-down-button {
-        display: inline-block;
-        background: url(../images/arrow-down2-50x50.png) no-repeat center;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
+          color: #475020; }
+      .other-activities .other-activities-content article .arrow-down-button, .other-activities .other-activities-content article .arrow-left-button {
         float: right;
         margin-right: 40px;
+        margin-top: 20px; }
+      .other-activities .other-activities-content article .arrow-left-button {
+        float: right;
+        margin-right: 10px;
         margin-top: 20px; }
       .other-activities .other-activities-content article p {
         padding-left: 100px;
         padding-right: 100px; }
-        .other-activities .other-activities-content article p.other-activities-text {
+        .other-activities .other-activities-content article p.about-me-text {
           padding-top: 50px; }
-      .other-activities .other-activities-content article .other-activities-social {
-        display: inline-block;
-        padding-top: 50px;
-        padding-left: 30%; }
-        .other-activities .other-activities-content article .other-activities-social ul {
-          list-style: none;
-          display: inline-block; }
-          .other-activities .other-activities-content article .other-activities-social ul li {
-            display: inline-block; }
-        .other-activities .other-activities-content article .other-activities-social .button {
-          width: 56px;
-          height: 56px;
-          display: inline-block;
-          margin-left: 20px;
-          margin-right: 20px; }
-        .other-activities .other-activities-content article .other-activities-social .twitter {
-          background: url(../images/twitter.png) no-repeat center; }
-        .other-activities .other-activities-content article .other-activities-social .facebook {
-          background: url(../images/facebook.png) no-repeat center; }
-        .other-activities .other-activities-content article .other-activities-social .instagram {
-          background: url(../images/instagram.png) no-repeat center; }
-        .other-activities .other-activities-content article .other-activities-social .linkedin {
-          background: url(../images/linkedin.png) no-repeat center; }
+
+.work {
+  background-color: white;
+  width: 100%; }
+  .work .title {
+    display: block;
+    height: 50%; }
+    .work .title span {
+      display: inline-block;
+      width: 375px;
+      float: left;
+      padding-left: 80px;
+      padding-top: 125px;
+      line-height: 1; }
+      .work .title span b {
+        font-size: 32pt;
+        color: #6596cf; }
+    .work .title img {
+      height: 100%;
+      width: 50%;
+      float: left; }
+  .work .box {
+    display: block;
+    width: 100%;
+    height: 320px;
+    font-size: 0; }
+    .work .box .box-img {
+      width: 50%;
+      height: 500px;
+      display: inline-block;
+      transform: scale(0);
+      opacity: 0; }
+      .work .box .box-img.titleImage {
+        background: url(../../images/3DImage.jpg) no-repeat center; }
+      .work .box .box-img.draw {
+        background: url(../images/landing/manufacturer/draw.jpg) no-repeat center; }
+      .work .box .box-img.building {
+        background: url(../images/landing/manufacturer/building.jpg) no-repeat center; }
+    .work .box .box-text {
+      width: 50%;
+      height: 500px;
+      display: inline-block;
+      transform: scale(0);
+      opacity: 0; }
+      .work .box .box-text .cicle-text {
+        color: white;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        font-size: 12pt; }
+        .work .box .box-text .cicle-text p {
+          padding-bottom: 30px; }
+        .work .box .box-text .cicle-text h3 {
+          font-weight: 100;
+          padding-bottom: 30px;
+          font-size: 1.875em; }
+    .work .box .mini-box {
+      transform: scale(0);
+      opacity: 0;
+      width: 360px;
+      height: 320px;
+      display: inline-block; }
+      .work .box .mini-box.pen {
+        background: #CCC url(../images/landing/manufacturer/pen.png) no-repeat center;
+        margin-left: calc(50% - 360px); }
+      .work .box .mini-box.brush {
+        background: #CCC url(../images/landing/manufacturer/brush.png) no-repeat center;
+        margin-left: calc(50% - 360px); }
+      .work .box .mini-box.resize {
+        background: #CCC url(../images/landing/manufacturer/resize.png) no-repeat center; }
+    .work .box .right {
+      text-align: left;
+      float: right; }
+    .work .box .left {
+      text-align: left;
+      float: left; }
+    .work .box .top {
+      vertical-align: top; }
+  .work .big-box-height {
+    height: 670px !important; }
+  .work .medium-box-height {
+    height: 500px !important; }
+    .work .medium-box-height.cicle-text {
+      padding-top: 20% !important; }
+  .work .small-box-height {
+    height: 320px !important; }
+    .work .small-box-height.cicle-text {
+      padding-top: 10% !important; }
+  .work .larger-box-height {
+    height: 350px !important; }
+    .work .larger-box-height.cicle-text {
+      padding-top: 12% !important; }
+  .work .medium-box-width {
+    width: 585px !important; }
+  .work .dark-blue-box {
+    background-color: #CCC; }
+  .work .green-box {
+    background-color: #CCC; }
+  .work .cyan-box {
+    background-color: #CCC; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
 
 /*# sourceMappingURL=site.css.map */
