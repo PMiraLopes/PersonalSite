@@ -26,7 +26,7 @@
             // section 3
             //
 
-            var timeline31 = new TimelineMax()
+            var timeline1 = new TimelineMax()
                 .add(TweenMax.to("#box1 .box-img", 1, {
                     scale: 1,
                     ease: Expo.easeOut,
@@ -37,84 +37,62 @@
                     ease: Expo.easeOut,
                     opacity: 1
                 }), 0.3);
-           /* var timeline32 = new TimelineMax()
-                .add(TweenMax.to("#box2 .box-text", 1, {
-                    scale: 1,
-                    ease: Expo.easeOut,
-                    opacity: 1
-                }))
+
+            var timeline2 = new TimelineMax()
                 .add(TweenMax.to("#box2 .box-img", 1, {
                     scale: 1,
                     ease: Expo.easeOut,
                     opacity: 1
-                }), 0);
+                }), 0.3)
+                .add(TweenMax.to("#box2 .box-text", 1, {
+                    scale: 1,
+                    ease: Expo.easeOut,
+                    opacity: 1
+                }), 0.3);
 
-            var timeline33 = new TimelineMax()
+            var timeline3 = new TimelineMax()
                 .add(TweenMax.to("#box3 .box-img", 1, {
                     scale: 1,
                     ease: Expo.easeOut,
                     opacity: 1
-                }))
-                .add(TweenMax.to("#box3 .mini-box", 1, {
-                    scale: 1,
-                    ease: Expo.easeOut,
-                    opacity: 1
-                }), 0.2)
+                }), 0.3)
                 .add(TweenMax.to("#box3 .box-text", 1, {
                     scale: 1,
                     ease: Expo.easeOut,
                     opacity: 1
-                }), 0.4);
+                }), 0.3)
+                .add(TweenMax.to("#box4 .box-img", 1, {
+                    scale: 1,
+                    ease: Expo.easeOut,
+                    opacity: 1
+                }), 1)
+                .add(TweenMax.to("#box4 .box-text", 1, {
+                    scale: 1,
+                    ease: Expo.easeOut,
+                    opacity: 1
+                }), 1);
 
-            var timeline34 = new TimelineMax()
-                .add(TweenMax.to("#box4 .mini-box", 1, {
-                    scale: 1,
-                    ease: Expo.easeOut,
-                    opacity: 1
-                }));
-
-            var timeline35 = new TimelineMax()
-                .add(TweenMax.to("#box5 .box-text", 1, {
-                    scale: 1,
-                    ease: Expo.easeOut,
-                    opacity: 1
-                }))
-                .add(TweenMax.to("#box5 .box-img", 1, {
-                    scale: 1,
-                    ease: Expo.easeOut,
-                    opacity: 1
-                }), 0);*/
 
             new ScrollMagic.Scene({
                     triggerElement: "#box1",
                     reverse: false
                 })
-                .setTween(timeline31)
+                .setTween(timeline1)
                 .addTo(controller);
-           /* new ScrollMagic.Scene({
+
+            new ScrollMagic.Scene({
                     triggerElement: "#box2",
                     reverse: false
                 })
-                .setTween(timeline32)
+                .setTween(timeline2)
                 .addTo(controller);
+
             new ScrollMagic.Scene({
                     triggerElement: "#box3",
                     reverse: false
                 })
-                .setTween(timeline33)
+                .setTween(timeline3)
                 .addTo(controller);
-            new ScrollMagic.Scene({
-                    triggerElement: "#box4",
-                    reverse: false
-                })
-                .setTween(timeline34)
-                .addTo(controller);
-            new ScrollMagic.Scene({
-                    triggerElement: "#box5",
-                    reverse: false
-                })
-                .setTween(timeline35)
-                .addTo(controller);*/
         });
     </script>
 </head>
@@ -122,57 +100,64 @@
 <body>
     <main class="work">
         <div class="title">
-            <img src="../images/3DImage.jpg" alt="3D image">
-            <span><b>WHAT HAVE I BEEN UP TO</b></span>
-        </div>
-        <div class="box" id="box1">
-            <div class="box-img titleImage"></div>
-            <div class="box-text right">
-                <h3><b>WHAT HAVE I BEEN UP TO</b></h3>
+            <div class="title-img">
+                <img src="../images/3DImage.jpg" alt="3D image">
+            </div>
+            <div class="title-text">
+                <span><b>WHAT HAVE I BEEN UP TO</b></span>
+
             </div>
         </div>
-        <!--<div class="box" id="box1">
-            <div class="mini-box pen">
+
+        <div class="box small-height" id="box1">
+            <div class="left-side">
+                <div class="box-img bimk right small-height"></div>
             </div>
-            <div class="box-text right">
-                <div class="cicle-text left medium-box-width small-box-height cyan-box">
-                    <h3>CATALOGUE</h3>
-                    <p>Whether in the first moment, while creating your products and turning them into objects to include in a catalog.</p>
+            <div class="right-side">
+                <div class="box-text primary-color-light left small-height">
+                    <h3>Bimk</h3>
+                    <p>I work as a full stack junior developer using OSGi framework and RESTfull service development for back-end development and Play! Framework, Angular JS, HTML, CSS, Javascript, jQuery and Twitter Bootstrap for front-end development.</p>
                 </div>
             </div>
         </div>
-        <div class="box medium-box-height" id="box2">
-            <div class="box-text left">
-                <div class="cicle-text right medium-box-width medium-box-height dark-blue-box">
-                    <h3>PRODUCTS DISPLAY</h3>
-                    <p>Whether when they are presented on the platform ...</p>
+
+        <div class="box large-height" id="box2">
+            <div class="left-side">
+                <div class="box-text primary-color-dark right large-height">
+                    <h3>Siemens 3IB</h3>
+                    <p>Research scholarship at Instituto Superior Técnico, for the Civil Engineering Department, as a developer for a graphical application for real-time facility monitoring. This project was made in a partnership betwen Instituto Superior Técnico and Siemens, and installed in 3 real case studies, Lisbon Aquarium, Luz's Hospital and Vouga shopping. This project explored the advantages of monitoring facilities using tri-dimentional representation of data, and facilities. This project was developed using Unity3D, C# and .Net.</p>
                 </div>
             </div>
-            <div class="box-img palette">
-            </div>
-        </div>
-        <div class="box  big-box-height" id="box3">
-            <div class="box-img big-box-height draw left"></div>
-            <div class="mini-box resize"></div>
-            <div class="box-text left larger-box-height">
-                <div class="cicle-text left medium-box-width larger-box-height dark-blue-box">
-                    <h3>USERS</h3>
-                    <p>Whether when they are integrated by specifiers in their projects ...</p>
+            <div class="right-side">
+                <div class="box-img large-height ist">
                 </div>
             </div>
         </div>
-        <div class="box" id="box4">
-            <div class="mini-box brush"></div>
-        </div>
-        <div class="box  medium-box-height" id="box5">
-            <div class="box-text left medium-box-height">
-                <div class="cicle-text right medium-box-width medium-box-height green-box">
-                    <h3>BUILDING</h3>
-                    <p>Or even during the process of construction and maintenance.</p>
+
+        <div class="box small-height" id="box3">
+            <div class="left-side">
+                <div class="box-img inesc small-height right"></div>
+            </div>
+            <div class="right-side">
+                <div class="box-text primary-color-light left small-height">
+                    <h3>CEDAR</h3>
+                    <p>Research scholarship for Vimmi Group (INESC-ID), where I integrated a research project to create colaborative meetings over the internet, which main goal was to demonstrate 3D prototypes with virtual reunions in them, I was the one responsible for creating and animating the user's avatars, that were being tracked by Kinect Cameras.</p>
                 </div>
             </div>
-            <div class="box-img medium-box-width medium-box-height building left"></div>
-        </div>-->
+        </div>
+
+        <div class="box small-height" id="box4">
+            <div class="left-side">
+                <div class="box-text primary-color-dark right small-height">
+                    <h3>Premium Minds</h3>
+                    <p>Summer Internship at Premium Minds, developing a billing library to create, store and manage bililing documents, like invoices or credit notes. It also supports exportation of persisted data in PDF and SAF-T formats.</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="box-img premium small-height">
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>
