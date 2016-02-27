@@ -1,3 +1,7 @@
+.other-activities-body{
+    background: rgb(71, 80, 32);
+}
+
 .other-activities {
     width: 100%;
     .other-activities-image {
@@ -10,7 +14,6 @@
         display: inline-block;
         height: 65%;
         width: 100%;
-        background-color: rgb(71, 80, 32);
         position: relative;
         article {
             position: absolute;
@@ -40,6 +43,9 @@
                         &.darkGreen {
                             color: rgb(71, 80, 32);
                         }
+                        &.black{
+                            color: black;
+                        }
                     }
                 }
             }
@@ -49,6 +55,9 @@
                 font-size: 16px;
                 .darkGreen {
                     color: rgb(71, 80, 32);
+                }
+                .black{
+                    color: black;
                 }
                 display: inline-block;
             }

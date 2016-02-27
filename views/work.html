@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Pedro Mira Lopes</title>
 
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
@@ -38,6 +40,13 @@
                     opacity: 1
                 }), 0.3);
 
+            var timeline11 = new TimelineMax()
+                .add(TweenMax.to("#minibox1", 1, {
+                    scale: 1,
+                    ease: Expo.easeOut,
+                    opacity: 1
+                }));
+
             var timeline2 = new TimelineMax()
                 .add(TweenMax.to("#box2 .box-img", 1, {
                     scale: 1,
@@ -50,6 +59,13 @@
                     opacity: 1
                 }), 0.3);
 
+            var timeline22 = new TimelineMax()
+                .add(TweenMax.to("#minibox2", 1, {
+                    scale: 1,
+                    ease: Expo.easeOut,
+                    opacity: 1
+                }));
+
             var timeline3 = new TimelineMax()
                 .add(TweenMax.to("#box3 .box-img", 1, {
                     scale: 1,
@@ -60,17 +76,24 @@
                     scale: 1,
                     ease: Expo.easeOut,
                     opacity: 1
-                }), 0.3)
+                }), 0.3);
+
+            var timeline33 = new TimelineMax()
+                .add(TweenMax.to("#minibox3", 1, {
+                    scale: 1,
+                    ease: Expo.easeOut,
+                    opacity: 1
+                }))
                 .add(TweenMax.to("#box4 .box-img", 1, {
                     scale: 1,
                     ease: Expo.easeOut,
                     opacity: 1
-                }), 1)
+                }), 0.5)
                 .add(TweenMax.to("#box4 .box-text", 1, {
                     scale: 1,
                     ease: Expo.easeOut,
                     opacity: 1
-                }), 1);
+                }), 0.5);
 
 
             new ScrollMagic.Scene({
@@ -81,6 +104,13 @@
                 .addTo(controller);
 
             new ScrollMagic.Scene({
+                    triggerElement: "#minibox1",
+                    reverse: false
+                })
+                .setTween(timeline11)
+                .addTo(controller);
+
+            new ScrollMagic.Scene({
                     triggerElement: "#box2",
                     reverse: false
                 })
@@ -88,10 +118,25 @@
                 .addTo(controller);
 
             new ScrollMagic.Scene({
+                    triggerElement: "#minibox2",
+                    reverse: false
+                })
+                .setTween(timeline22)
+                .addTo(controller);
+
+
+            new ScrollMagic.Scene({
                     triggerElement: "#box3",
                     reverse: false
                 })
                 .setTween(timeline3)
+                .addTo(controller);
+
+            new ScrollMagic.Scene({
+                    triggerElement: "#minibox3",
+                    reverse: false
+                })
+                .setTween(timeline33)
                 .addTo(controller);
         });
     </script>
@@ -101,9 +146,11 @@
     <main class="work">
         <div class="title">
             <div class="title-img">
-                <img src="../images/3DImage.jpg" alt="3D image">
+                <img src="../images/work-wallpapper.jpg" width="50%" height="12.5%" alt="3D image">
             </div>
             <div class="title-text">
+                <a class="arrow-down-button-dark" scroll-on-click href="#socialIcons"></a>
+                <a class="arrow-left-button-dark" scroll-on-click href="../index.html"></a>
                 <span><b>WHAT HAVE I BEEN UP TO</b></span>
 
             </div>
@@ -114,16 +161,25 @@
                 <div class="box-img bimk right small-height"></div>
             </div>
             <div class="right-side">
-                <div class="box-text primary-color-light left small-height">
+                <div class="box-text primary-color left small-height">
                     <h3>Bimk</h3>
                     <p>I work as a full stack junior developer using OSGi framework and RESTfull service development for back-end development and Play! Framework, Angular JS, HTML, CSS, Javascript, jQuery and Twitter Bootstrap for front-end development.</p>
                 </div>
             </div>
         </div>
+        <div class="box smallest-height">
+            <div class="left-side">
+                <div class="mini-box divider-color right" id="minibox1">
+                    <div class="mini-box-text fa fa-file-code-o"></div>
+                </div>
+            </div>
+            <div class="right-side">
+            </div>
+        </div>
 
         <div class="box large-height" id="box2">
             <div class="left-side">
-                <div class="box-text primary-color-dark right large-height">
+                <div class="box-text primary-color-light right large-height">
                     <h3>Siemens 3IB</h3>
                     <p>Research scholarship at Instituto Superior Técnico, for the Civil Engineering Department, as a developer for a graphical application for real-time facility monitoring. This project was made in a partnership betwen Instituto Superior Técnico and Siemens, and installed in 3 real case studies, Lisbon Aquarium, Luz's Hospital and Vouga shopping. This project explored the advantages of monitoring facilities using tri-dimentional representation of data, and facilities. This project was developed using Unity3D, C# and .Net.</p>
                 </div>
@@ -134,21 +190,41 @@
             </div>
         </div>
 
+        <div class="box smallest-height">
+            <div class="left-side">
+            </div>
+            <div class="right-side">
+                <div class="mini-box divider-color left" id="minibox2">
+                    <div class="mini-box-text fa fa-cloud"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="box small-height" id="box3">
             <div class="left-side">
                 <div class="box-img inesc small-height right"></div>
             </div>
             <div class="right-side">
-                <div class="box-text primary-color-light left small-height">
+                <div class="box-text primary-color left small-height">
                     <h3>CEDAR</h3>
                     <p>Research scholarship for Vimmi Group (INESC-ID), where I integrated a research project to create colaborative meetings over the internet, which main goal was to demonstrate 3D prototypes with virtual reunions in them, I was the one responsible for creating and animating the user's avatars, that were being tracked by Kinect Cameras.</p>
                 </div>
             </div>
         </div>
 
+        <div class="box smallest-height">
+            <div class="left-side">
+                <div class="mini-box divider-color right" id="minibox3">
+                    <div class="mini-box-text fa fa-terminal"></div>
+                </div>
+            </div>
+            <div class="right-side">
+            </div>
+        </div>
+
         <div class="box small-height" id="box4">
             <div class="left-side">
-                <div class="box-text primary-color-dark right small-height">
+                <div class="box-text primary-color-light right small-height">
                     <h3>Premium Minds</h3>
                     <p>Summer Internship at Premium Minds, developing a billing library to create, store and manage bililing documents, like invoices or credit notes. It also supports exportation of persisted data in PDF and SAF-T formats.</p>
                 </div>
@@ -156,6 +232,28 @@
             <div class="right-side">
                 <div class="box-img premium small-height">
                 </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social-icons" id="socialIcons">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/PedroMiraLopes" class="fa fa-twitter-square fa-5x"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pedro.miralopes" class="fa fa-facebook-square fa-5x"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/profile/view?id=AAMAABLRKiEBWGOiBwWHw8A5R3bMJ2KaDpVYAuY&trk=hp-identity-photo" class="fa fa-linkedin-square fa-5x"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/pfmiralopes/" class="fa fa-instagram fa-5x"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/PMiraLopes" class="fa fa-github-square fa-5x"></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>

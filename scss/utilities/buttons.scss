@@ -21,6 +21,16 @@
     background: url(../images/arrow-left2-50x50.png) no-repeat center;
 }
 
+.arrow-down-button-dark{
+    @extend .arrow-down-button;
+    background: url(../images/arrow-down2-dark-50x50.png) no-repeat center;
+}
+
+.arrow-left-button-dark{
+    @extend .arrow-down-button;
+    background: url(../images/arrow-left2-dark-50x50.png) no-repeat center;
+}
+
 .contacts {
     padding-top: 50px;
     width: 100%;

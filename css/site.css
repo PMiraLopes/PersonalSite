@@ -1,4 +1,4 @@
-.arrow-down-button, .arrow-left-button {
+.arrow-down-button, .arrow-left-button, .arrow-down-button-dark, .arrow-left-button-dark {
   background: url(../images/arrow-down2-50x50.png) no-repeat center;
   cursor: pointer;
   width: 50px;
@@ -8,7 +8,7 @@
   -o-transition: all 1s ease;
   transition: all 1s ease;
   z-index: 3; }
-  .arrow-down-button:hover, .arrow-left-button:hover {
+  .arrow-down-button:hover, .arrow-left-button:hover, .arrow-down-button-dark:hover, .arrow-left-button-dark:hover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -o-transform: rotate(360deg);
@@ -16,6 +16,12 @@
 
 .arrow-left-button {
   background: url(../images/arrow-left2-50x50.png) no-repeat center; }
+
+.arrow-down-button-dark {
+  background: url(../images/arrow-down2-dark-50x50.png) no-repeat center; }
+
+.arrow-left-button-dark {
+  background: url(../images/arrow-left2-dark-50x50.png) no-repeat center; }
 
 .contacts {
   padding-top: 50px;
@@ -52,7 +58,7 @@
     background: url(../images/Lisbon.jpg) no-repeat center;
     background-size: cover;
     position: relative; }
-    .home .name-section .arrow-down-button, .home .name-section .arrow-left-button {
+    .home .name-section .arrow-down-button, .home .name-section .arrow-left-button, .home .name-section .arrow-down-button-dark, .home .name-section .arrow-left-button-dark {
       position: absolute;
       left: 50%;
       bottom: 10px; }
@@ -101,7 +107,7 @@
     width: 100%;
     height: 50%;
     position: relative; }
-    .home section .arrow-down-button, .home section .arrow-left-button {
+    .home section .arrow-down-button, .home section .arrow-left-button, .home section .arrow-down-button-dark, .home section .arrow-left-button-dark {
       position: absolute;
       left: 50%;
       bottom: 10px; }
@@ -129,6 +135,9 @@
       text-decoration: none;
       padding: 10px; }
 
+.about-body {
+  background: black; }
+
 .about-me {
   width: 100%; }
   .about-me .about-me-image {
@@ -140,7 +149,6 @@
     display: inline-block;
     height: 75%;
     width: 100%;
-    background-color: black;
     position: relative; }
     .about-me .about-me-content article {
       position: absolute;
@@ -179,7 +187,7 @@
         display: inline-block; }
         .about-me .about-me-content article .about-me-name .black {
           color: #202020; }
-      .about-me .about-me-content article .arrow-down-button, .about-me .about-me-content article .arrow-left-button {
+      .about-me .about-me-content article .arrow-down-button, .about-me .about-me-content article .arrow-left-button, .about-me .about-me-content article .arrow-down-button-dark, .about-me .about-me-content article .arrow-left-button-dark {
         float: right;
         margin-right: 40px;
         margin-top: 20px; }
@@ -193,6 +201,9 @@
         .about-me .about-me-content article p.about-me-text {
           padding-top: 50px; }
 
+.contact-body {
+  background-color: #a08142; }
+
 .contact-me {
   width: 100%; }
   .contact-me .contact-me-image {
@@ -204,7 +215,6 @@
     display: inline-block;
     height: 80%;
     width: 100%;
-    background-color: #a08142;
     position: relative; }
     .contact-me .contact-me-content article {
       position: absolute;
@@ -243,7 +253,7 @@
         display: inline-block; }
         .contact-me .contact-me-content article .contact-me-name .black {
           color: #202020; }
-      .contact-me .contact-me-content article .arrow-down-button, .contact-me .contact-me-content article .arrow-left-button {
+      .contact-me .contact-me-content article .arrow-down-button, .contact-me .contact-me-content article .arrow-left-button, .contact-me .contact-me-content article .arrow-down-button-dark, .contact-me .contact-me-content article .arrow-left-button-dark {
         float: right;
         margin-right: 40px;
         margin-top: 20px; }
@@ -278,6 +288,9 @@
           padding-right: 20px;
           color: black; }
 
+.other-activities-body {
+  background: #475020; }
+
 .other-activities {
   width: 100%; }
   .other-activities .other-activities-image {
@@ -289,7 +302,6 @@
     display: inline-block;
     height: 65%;
     width: 100%;
-    background-color: #475020;
     position: relative; }
     .other-activities .other-activities-content article {
       position: absolute;
@@ -317,6 +329,8 @@
           line-height: 25px; }
           .other-activities .other-activities-content article .other-activities-title-section .other-activities-title h3.darkGreen {
             color: #475020; }
+          .other-activities .other-activities-content article .other-activities-title-section .other-activities-title h3.black {
+            color: black; }
       .other-activities .other-activities-content article .other-activities-name {
         padding-top: 20px;
         padding-left: 20px;
@@ -324,7 +338,9 @@
         display: inline-block; }
         .other-activities .other-activities-content article .other-activities-name .darkGreen {
           color: #475020; }
-      .other-activities .other-activities-content article .arrow-down-button, .other-activities .other-activities-content article .arrow-left-button {
+        .other-activities .other-activities-content article .other-activities-name .black {
+          color: black; }
+      .other-activities .other-activities-content article .arrow-down-button, .other-activities .other-activities-content article .arrow-left-button, .other-activities .other-activities-content article .arrow-down-button-dark, .other-activities .other-activities-content article .arrow-left-button-dark {
         float: right;
         margin-right: 40px;
         margin-top: 20px; }
@@ -350,14 +366,15 @@
     .work .title .title-img {
       display: inline-block;
       width: 50%;
+      height: 100%;
       float: left; }
       .work .title .title-img img {
-        margin-left: calc(100% - 960px);
-        width: 960px;
-        height: 320px; }
+        width: 100%;
+        height: 100%; }
     .work .title .title-text {
       display: inline-block;
-      width: 50%; }
+      width: 50%;
+      position: relative; }
       .work .title .title-text span {
         width: 375px;
         float: left;
@@ -366,7 +383,15 @@
         line-height: 1; }
         .work .title .title-text span b {
           font-size: 36pt;
-          color: #212121; }
+          color: #727272; }
+      .work .title .title-text .arrow-down-button-dark {
+        position: absolute;
+        right: 20px;
+        top: 20px; }
+      .work .title .title-text .arrow-left-button-dark {
+        position: absolute;
+        right: 80px;
+        top: 20px; }
   .work .box {
     font-size: 0;
     width: 100%;
@@ -416,16 +441,41 @@
     display: block;
     transform: scale(0);
     opacity: 0;
-    width: 360px;
-    height: 320px; }
+    width: 250px;
+    height: 250px; }
+    .work .mini-box .mini-box-text {
+      color: white;
+      font-size: 90pt;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 70px; }
+  .work .footer {
+    width: 100%;
+    margin: 0 auto;
+    background: #F57C00;
+    text-align: center; }
+    .work .footer .social-icons {
+      display: inline-block; }
+      .work .footer .social-icons ul {
+        list-style: none; }
+        .work .footer .social-icons ul li {
+          display: inline-block; }
+      .work .footer .social-icons a {
+        color: white;
+        text-decoration: none;
+        padding: 10px; }
   .work .primary-color-dark {
-    background-color: #1976D2; }
+    background-color: #F57C00; }
   .work .primary-color {
-    background-color: #2196F3; }
+    background-color: #FF9800; }
   .work .primary-color-light {
-    background-color: #6596cf; }
+    background-color: #FFE0B2;
+    color: black; }
   .work .accent-color {
-    background-color: #00BCD4; }
+    background-color: #03A9F4; }
+  .work .divider-color {
+    background-color: #B6B6B6; }
   .work .right {
     text-align: left;
     float: right; }
@@ -434,6 +484,8 @@
   .work .left {
     text-align: left;
     float: left; }
+  .work .smallest-height {
+    height: 250px; }
   .work .small-height {
     height: 350px; }
   .work .large-height {
